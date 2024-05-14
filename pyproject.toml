@@ -13,6 +13,8 @@ ultralytics = "^8.2.6"
 [tool.poetry.group.dev.dependencies]
 notebook = "^7.1.2"
 pre-commit = "^3.7.0"
+black = "^24.4.2"
+isort = "^5.13.2"
 
 [build-system]
 requires = ["poetry-core"]
