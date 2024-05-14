@@ -13,3 +13,9 @@ install: ## Install Python requirements.
 .PHONY: run
 run: ## Run the project.
 	poetry run python src/app/main.py
+
+
+.PHONY: format
+format: ## Run formatter.
+	poetry run python -m black .
+	poetry run python -m isort .
