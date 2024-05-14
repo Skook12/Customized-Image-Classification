@@ -6,7 +6,6 @@ endif
 .PHONY: install
 install: ## Install Python requirements.
 	python -m pip install --upgrade pip setuptools wheel poetry
-	poetry add ultralytics
 	poetry lock
 	poetry install --no-root
 	poetry run pre-commit install
